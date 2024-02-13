@@ -1,0 +1,33 @@
+name: iml
+channels:
+  - conda-forge
+  - defaults
+  - conda-forge/label/broken
+dependencies:
+  - python=3.10
+  # Scientific/numeric libraries
+  - numpy
+  - scipy
+  - scikit-learn
+  - scikit-image
+  - pandas
+  # Plotting
+  - matplotlib
+  - seaborn
+  # GPU / Automatic diff / optimisation
+  - numba
+  # Utils
+  - tqdm
+  - click
+  # Jupyter
+  - qgrid
+  # Node
+  - nodejs
+  - pip
+  - pip:
+    - torch
+    - torchvision
+    - opencv-python
+    - imutils
+    - jupyterlab==4.0.2
+    - ipywidgets
